@@ -1,11 +1,11 @@
 {
-  "name": "JS",
-  "source": "src/index.html",
+  "name": "js",
+  "source": "Baton/src/index.html",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "dev": "yarn run parcel Baton/src/index.html --out-dir dist/dev",
+    "build": "yarn run parcel build Baton/src/**.html --out-dir dist/build"
   },
   "devDependencies": {
-    "parcel": "latest"
+    "parcel": "^2.4.1"
   }
 }
