@@ -21,9 +21,9 @@ var superSecretFile = {
     contents: "Dr. Evel's next meeting is in Detroit"
 };
 
-var secret = getSecret(file, secretPassword);
+var secret = getSecret(superSecretFile, 2);
 console.log(secret);
 
-setSecret(file, secretPassword, "Dr. Evel's next meeting is in Philadelphia.");
-secret = getSecret(file, secretPassword);
+setSecret(superSecretFile, 2, "Dr. Evel's next meeting is in Philadelphia.");
+secret = getSecret(superSecretFile, 2);
 console.log(secret);
